@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Bash script changes the localhost to 127.0.0.2 and facebook.com to 8.8.8.8
 cp /etc/hosts /tmp/hosts_temp
-sed 's/127.0.0.1 localhost/127.0.0.2 localhost/' /tmp/hosts_temp > /etc/hosts
+sed 's/127.0.0.1\tlocalhost/127.0.0.2\tlocalhost/' /tmp/hosts_temp > /etc/hosts
 echo "8.8.8.8 facebook.com" >> /etc/hosts
